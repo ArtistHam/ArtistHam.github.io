@@ -1,0 +1,5 @@
+#3f3577 - basic
+#9080E7 - the lightest
+#6255A9 - lighter
+#221B46 - darker
+#090714 - the darkest
