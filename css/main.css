@@ -124,17 +124,15 @@ main{
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
+    justify-content: flex-start;
 }
 
 main article{
     width: 30%;
-    margin-bottom: 15px;
     background-color: #3f3577;
     color: #9080E7;
     padding: 10px;
+    margin: 15px;
     border-radius: 10px;
     -ms-flex-line-pack: distribute;
         align-content: space-around;
