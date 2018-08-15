@@ -124,14 +124,119 @@ main article{
 main article h2{
     font-size: 20px;
     text-align: center;
+    padding: 10px 0;
 }
 
-.bootstrap1 {
+.prevue {
     width: 90%;
     height: 155px;
     margin: 0 auto;
-    background: url(../img/prevue/bootstrap1.jpg);
-    background-size: cover;
     border-radius: 10px;
     border: 2px solid #9080E7;
+    position: relative;
+    overflow: hidden;
+    position: relative;
+}
+
+.prevue .links{
+    position: absolute;
+    left: 0;
+    top: 70px;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    opacity: 0;
+    transition: opacity 0.6s;
+    z-index: 10;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.links a{
+    background-color: #6255A9;
+    padding: 10px;
+    text-decoration: none;
+    color: #221B46;
+    border-top: 3px solid #9080E7;
+    border-left: 3px solid #9080E7;
+    border-right: 3px solid #221B46;
+    border-bottom: 3px solid #221B46;
+    box-shadow: #090714 2px 2px;
+    border-radius: 10px;
+}
+
+.links a:active{
+    box-shadow: none;
+    transform: translate(2px 2px);
+}
+
+
+article img{
+    height: 155px;
+    transition: all 0.6s;
+    z-index: 10;
+}
+
+.about{
+    position: absolute;
+    padding: 10px;
+    text-align: center;
+    color: #9080E7;
+    width: 90%;
+    left: 0;
+    top: 10px;
+    z-index: 10;
+    transform: translateY(200px);
+    opacity: 0;
+    transition: all 0.6s;
+}
+
+.prevue:hover .links{
+    opacity: 1;
+}
+
+.prevue:hover .about{
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.prevue:hover img{
+    transform: scale(1.2);
+}
+
+.prevue:after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    background: rgba(0,0,0,.5);
+    -moz-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    top: 0;
+    left: 0;
+    position: absolute;
+    border-radius: 10px;
+}
+.prevue:hover:after {
+    opacity: 1;
+}
+
+article .tags:before{
+    content: "✎";
+    position: relative;
+    right: 10px;
+    font-size: 20px;
+    font-weight: 900;
+}
+
+article .tags{
+    position: relative;
+    left: 12px;
+}
+
+.line{
+    border: 1px dashed #6255A9;
+    margin-bottom: 10px;
 }
