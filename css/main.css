@@ -52,11 +52,16 @@ body {
 }
 
 header {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     background-color: #3f3577;
     height: 150px;    
-    flex-wrap: wrap;
-    justify-content: baseline;
+    -ms-flex-wrap: wrap;    
+        flex-wrap: wrap;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
     color: #090714;
 }
 
@@ -70,14 +75,16 @@ header img {
 .header__name{
     font-size: 60px;
     width: 40%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     
 }
 .header__text {
     font-weight: 600;
     font-size: 20px;
     width: 42%;
-    align-self: center;
+    -ms-flex-item-align: center;
+        align-self: center;
     padding: 15px;
     border: dotted 2px #9080E7;
     border-radius: 12px;
@@ -85,8 +92,12 @@ header img {
 }
 nav{
     background-color: #6255A9;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
 }
 nav a{
     margin: 10px;
@@ -94,21 +105,28 @@ nav a{
     background-color: #221B46;
     color: #9080E7;
     text-decoration: none;
-    box-shadow: #090714 5px 5px;
+    -webkit-box-shadow: #090714 5px 5px;
+            box-shadow: #090714 5px 5px;
 }
 nav a:hover{
     background-color: #3f3577;
 }
 nav a:active{
-    box-shadow: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
 }
 
 main{
     width:80%;
     margin: 40px auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
 }
 
 main article{
@@ -118,7 +136,8 @@ main article{
     color: #9080E7;
     padding: 10px;
     border-radius: 10px;
-    align-content: space-around;
+    -ms-flex-line-pack: distribute;
+        align-content: space-around;
 }
 
 main article h2{
@@ -144,13 +163,20 @@ main article h2{
     top: 70px;
     right: 0;
     bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     opacity: 0;
+    -webkit-transition: opacity 0.6s;
     transition: opacity 0.6s;
     z-index: 10;
-    flex-wrap: wrap;
-    align-items: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 .links a{
     background-color: #6255A9;
@@ -161,18 +187,22 @@ main article h2{
     border-left: 3px solid #9080E7;
     border-right: 3px solid #221B46;
     border-bottom: 3px solid #221B46;
-    box-shadow: #090714 2px 2px;
+    -webkit-box-shadow: #090714 2px 2px;
+            box-shadow: #090714 2px 2px;
     border-radius: 10px;
 }
 
 .links a:active{
-    box-shadow: none;
-    transform: translate(2px 2px);
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-transform: translate(2px 2px);
+            transform: translate(2px 2px);
 }
 
 
 article img{
     height: 155px;
+    -webkit-transition: all 0.6s;
     transition: all 0.6s;
     z-index: 10;
 }
@@ -186,8 +216,10 @@ article img{
     left: 0;
     top: 10px;
     z-index: 10;
-    transform: translateY(200px);
+    -webkit-transform: translateY(200px);
+            transform: translateY(200px);
     opacity: 0;
+    -webkit-transition: all 0.6s;
     transition: all 0.6s;
 }
 
@@ -196,12 +228,14 @@ article img{
 }
 
 .prevue:hover .about{
-    transform: translateY(0);
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
     opacity: 1;
 }
 
 .prevue:hover img{
-    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
 }
 
 .prevue:after {
@@ -211,7 +245,6 @@ article img{
     width: 100%;
     opacity: 0;
     background: rgba(0,0,0,.5);
-    -moz-transition: all 1s;
     -webkit-transition: all 1s;
     transition: all 1s;
     top: 0;
