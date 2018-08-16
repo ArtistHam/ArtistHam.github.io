@@ -135,6 +135,7 @@ main article{
     border-radius: 10px;
     -ms-flex-line-pack: distribute;
         align-content: space-around;
+    margin-bottom: 15px;
 }
 
 main article h2{
