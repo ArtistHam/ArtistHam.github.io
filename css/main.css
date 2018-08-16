@@ -124,7 +124,7 @@ main{
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: space-between;
 }
 
 main article{
@@ -132,7 +132,6 @@ main article{
     background-color: #3f3577;
     color: #9080E7;
     padding: 10px;
-    margin: 15px;
     border-radius: 10px;
     -ms-flex-line-pack: distribute;
         align-content: space-around;
@@ -242,7 +241,7 @@ article img{
     height: 100%;
     width: 100%;
     opacity: 0;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,0.8);
     -webkit-transition: all 1s;
     transition: all 1s;
     top: 0;
