@@ -22,6 +22,8 @@ if(month.length == 1){
 
 var todayDay = day + "." + month + "." + year;
 
-alert(todayDay);
+fetch('https://api.privatbank.ua/p24api/exchange_rates?json&date=' + todayDay)
+  .then(response => response.json())
+  .then(json => console.log(json))
 
 document.addEventListener("DOMContentLoaded", ready);
