@@ -1,47 +1,45 @@
 body {
-    text-align: center;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    background: #e6eaf0;
-  }
-  button {
-    margin: 40px;
-    padding: 20px;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    border: 3px solid black;
-    border-radius: 10px;
-  }
-  button:hover {
-    background: #999;
-  }
-  button:active {
-    border: 1px solid black;
-  }
-  button:focus{
-    outline: none;
-  }
-  input {
-    font-size: 24px;
-  }
-  .fill {
-    background: white;
-    color: red;
-    border-bottom: 2px black solid;
-    font-family: 'Marck Script', cursive;
-    padding: 0 6px;
-    margin: 4px;
-  }
-  .prompt{
-    margin-top: 250px;
-    font-size: 30px;
-  }
-  input{
-    margin-top: 20px;
-  }
-  a {
-    display: none;
-  }
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  background: #e6eaf0;
+}
+button {
+  margin: 40px;
+  padding: 20px;
+  font-family: 'Oswald', sans-serif;
+  font-size: 20px;
+  border: 3px solid black;
+  border-radius: 10px;
+}
+button:hover { 
+  background: #999;
+}
+button:active {
+  border: 1px solid black;
+}
+button:focus{
+  outline: none;
+}
+input {
+  font-size: 24px;
+  margin-top: 20px;
+}
+.fill {
+  background: white;
+  color: red;
+  border-bottom: 2px black solid;
+  font-family: 'Marck Script', cursive;
+  padding: 0 6px;
+  margin: 4px;
+}
+.prompt{
+  margin-top: 250px;
+  font-size: 30px;
+}
+a {
+  display: none;
+}
 
 .preloader{
   position: fixed;
@@ -56,4 +54,31 @@ body {
 .preloader > div {
   position: relative;
   vertical-align: baseline;
+}
+
+@media screen and (max-width: 1023px){
+  .prompt{
+    margin-top: 200px;
+  }
+}
+
+@media screen and (max-width: 560px){
+  .prompt{
+    font-size: 24px;
+  }
+
+  input {
+    font-size: 20px;
+  }
+
+  button {
+    padding: 12px;
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 325px){
+  .prompt{
+    font-size: 20px;
+  }
 }
