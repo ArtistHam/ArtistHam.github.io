@@ -79,7 +79,7 @@ var timerId = setTimeout(function(){
     $(elems[15]).html(answers[7]);
   
     $('button').hide();
-    $('.prompt').css('margin', "100px");
+    $('.prompt').css('margin', "10%");
     $('.prompt').css('margin-top', "20px");
     $('a').css('display', "block");
     $('.preloader').fadeOut();
