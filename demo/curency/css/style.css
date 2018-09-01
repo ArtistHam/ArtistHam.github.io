@@ -69,13 +69,16 @@ h1  {
     margin: 20px;
     text-align: center;
     margin-top: 0;
+    padding-top: 5px;
 }
 ul {
-    display: block;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     background-color: rgb(7, 97, 27);
     color: white;
     padding: 10px 0;
+    line-height: 1.2em;
 }
 
 li {
@@ -134,4 +137,90 @@ section button {
     height: 40px;
     padding: 10px;
     font-weight: bold;
+}
+
+@media screen and (max-width: 955px) {
+    header .client_currency {
+       font-size: 10px;
+       margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 865px){
+    h1 {
+        font-size: 70px;
+        padding-top: 10px;
+    }
+}
+
+@media screen and (max-width: 800px){
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 700px){
+    h1 {
+        font-size: 50px;
+    }
+}
+
+@media screen and (max-width: 620px){
+    h1 {
+        font-size: 40px;
+        margin: 15px;
+        margin-top: 0;
+    }
+    section {
+        display: flex; 
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    section input, section select{
+        font-size: 20px;
+    }
+    section button {
+        margin: 0 30px;
+    }
+}
+
+@media screen and (max-width: 540px){
+    h1 {
+        padding-top: 30px;
+    }
+    header .client_currency {
+        left: 38%;
+        margin-top: 10px;
+        font-size: 12px;
+        width: 100px;
+    }
+    section {
+        width: 85%;
+        padding: 80px 0;
+    }
+}
+
+@media screen and (max-width: 450px){
+    header .client_currency{
+        left: 32%;
+    }
+    section input, section select{
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 400px){
+    input {
+        width: 50%;
+    }
+    section {
+        margin: 10px auto;
+        padding: 30px 0;
+    }
+    h1 {
+        font-size: 30px;
+    }
+    li{
+        font-size: 14px;
+    }
 }
